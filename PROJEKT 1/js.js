@@ -8,7 +8,7 @@ button.addEventListener("click", function () {
     const newDiv = document.createElement('div');
     // newDiv.classList.add("element");
     document.body.appendChild(newDiv)
-    newDiv.innerText = `${clicks}`;
+
     clicks += 1;
     if (clicks % 10 == 0) {
         newDiv.classList.add("fifth");
@@ -18,4 +18,5 @@ button.addEventListener("click", function () {
     } else {
 
     }
+    newDiv.innerText = `${clicks}`;
 })
