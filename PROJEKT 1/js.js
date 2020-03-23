@@ -1,10 +1,21 @@
 const button = document.querySelector('button');
 
-let clicks = 1;
+let clicks = 0;
+const body = document.querySelector('body');
 
 button.addEventListener("click", function () {
-    if (clicks % 5) {
-        document.createElement("div")
+
+    const newDiv = document.createElement('div');
+    // newDiv.classList.add("element");
+    document.body.appendChild(newDiv)
+    newDiv.innerText = `${clicks}`;
+    clicks += 1;
+    if (clicks % 10 == 0) {
+        newDiv.classList.add("fifth");
+
+    } else if (clicks % 5 == 0) {
+        newDiv.classList.add("tenth");
+    } else {
 
     }
 })
