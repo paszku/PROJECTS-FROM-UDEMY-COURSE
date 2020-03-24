@@ -4,6 +4,10 @@
     box-sizing: 0;
 }
 
+body {
+    height: 400vh;
+}
+
 
 .makeMeBigger {
     position: fixed;
