@@ -17,7 +17,7 @@ const createLiElements = () => {
         const newLi = document.createElement('li');
         const list = document.querySelector('ul');
         list.appendChild(newLi);
-        newLi.innerText = orderElement;
+        newLi.innerText = "Element nr " + orderElement;
         orderElement++;
         newLi.style.fontSize = size + 'px';
         size++
